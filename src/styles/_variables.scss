@@ -1,18 +1,30 @@
-$white: #FFFFFF;
+$white: #ffffff;
 
-$main-dark-green : #015232;
-$main-light-green: #00633C;
+$main-dark-green: #015232;
+$main-light-green: #00633c;
+$green-linear: linear-gradient(
+	to bottom,
+	#015232 0%,
+	#00633c 50%,
+	#039154 100%
+);
 
-$light-green: #E5F4EC;
+$light-green: #e5f4ec;
 
-$dark-gray: #6D6D6D;
+$dark-gray: #6d6d6d;
 $light-gray: rgb(109, 109, 109, 0.7);
 $border-gray: rgb(200, 200, 200, 0.5);
 
-
 $container-width: 1500px;
+$margin-inline: auto;
 $border-radius: 15px;
+
+$size-16: 16px;
+
+$fw-bold: 700;
+$fw-semibold: 600;
+$fw-medium: 500;
+$fw-regular: 400;
 
 $main-gap: 15px;
 $text-gap: 12px;
-

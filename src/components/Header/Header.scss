@@ -1,0 +1,124 @@
+@use '../../styles/variables' as *;
+
+.header-text {
+	font-size: $size-16;
+	color: $main-dark-green;
+	font-weight: $fw-semibold;
+}
+
+.header-svg {
+	width: 24px;
+	aspect-ratio: 1;
+}
+
+.header {
+	.header-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 84px;
+	}
+
+	.rieltor-logo {
+		width: 130px;
+		height: 80px;
+	}
+
+	.navigation {
+		.navigation-list {
+			display: flex;
+			align-items: center;
+			gap: 50px;
+		}
+
+		.navigation-item {
+			text-align: center;
+		}
+
+		.navigation-button {
+			position: relative;
+			display: inline-block;
+			// font-size: $size-16;
+			// font-weight: $fw-semibold;
+			color: $main-dark-green;
+			background-color: inherit;
+			border: none;
+			cursor: pointer;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -8px;
+				left: 50%;
+
+				width: 50px;
+				height: 2px;
+
+				background-color: $main-dark-green;
+
+				transform: translateX(-50%) scaleX(0);
+				transform-origin: center;
+
+				transition: transform 0.25s ease;
+				pointer-events: none;
+			}
+
+			&:hover::after {
+				transform: translateX(-50%) scaleX(1);
+			}
+		}
+	}
+
+	.contacts {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 55px;
+
+		.socials {
+			display: flex;
+			gap: $main-gap;
+		}
+
+		.socials-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 42px;
+			height: 42px;
+			background: $green-linear;
+			border-radius: 50%;
+		}
+
+		.phone-number {
+			display: flex;
+			align-items: center;
+			gap: $main-gap;
+			text-decoration: none;
+		}
+	}
+
+	.selected {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		background-color: inherit;
+		border: none;
+		cursor: pointer;
+
+		.selected-count {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			background: $green-linear;
+			border-radius: 50%;
+		}
+
+		.selected-count-text {
+			color: $white;
+			font-weight: $fw-medium;
+		}
+	}
+}
