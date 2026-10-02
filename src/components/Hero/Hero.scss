@@ -1,0 +1,189 @@
+@use '../../styles/variables' as *;
+
+.hero {
+	position: relative;
+	background-image: url('../../assets/jpg/heroBg.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+
+	color: $white;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		box-shadow: inset 0 500px rgb(0, 0, 0, 0.5);
+		z-index: -1;
+	}
+
+	.hero-container {
+		height: 500px;
+	}
+
+	.info-block {
+		padding-top: 70px;
+		width: auto;
+		max-width: 625px;
+	}
+
+	.info-block-text {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.info-block-suptitle {
+		font-size: 20px;
+		font-weight: $fw-medium;
+		text-transform: uppercase;
+		line-height: 1.27;
+		transform: translateX(2px);
+	}
+
+	.info-block-title {
+		font-size: 52px;
+		font-weight: $fw-bold;
+		line-height: 1.1;
+
+		span {
+			color: #00a060;
+		}
+	}
+
+	.info-block-subtitle {
+		font-size: 20px;
+		line-height: 1.27;
+		padding-top: 10px;
+	}
+
+	.info-block-buttons {
+		display: flex;
+		gap: 25px;
+		padding-top: 26px;
+		max-width: 511px;
+	}
+
+	.salary-button {
+		color: $white;
+		padding: 16px 25px;
+		border: 2px solid $white;
+		border-radius: $border-radius;
+		background-color: inherit;
+		font-size: $size-16;
+		font-weight: $fw-medium;
+	}
+
+	.achivment-block {
+		padding-top: 26px;
+		max-width: 556px;
+	}
+
+	.achivment-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 560px;
+	}
+
+	.achivment-item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: $main-gap;
+
+		&:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -20px;
+			width: 2px;
+			height: 37px;
+			background-color: $white;
+			opacity: 0.7;
+			border-radius: 1px;
+		}
+	}
+
+	.achivment-text {
+		font-size: 12px;
+		font-weight: $fw-medium;
+		line-height: 1.15;
+
+		span {
+			font-size: 20px;
+			font-weight: $fw-bold;
+		}
+	}
+
+	.rieltor-block {
+		position: absolute;
+		top: 25px;
+		right: 48px;
+	}
+
+	.rieltor-img {
+		position: relative;
+		display: block;
+		width: 685px;
+		height: auto;
+	}
+
+	.rieltor-block-insert {
+		position: absolute;
+		bottom: 134px;
+		left: 88px;
+		max-width: 250px;
+		height: 100px;
+		background: linear-gradient(
+			to right,
+			rgb(0, 0, 0, 0.5) 75%,
+			rgb(0, 0, 0, 0.1) 97%,
+			rgb(0, 0, 0, 0) 100%
+		);
+		border-radius: 10px;
+	}
+
+	.rieltor-block-text {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding-left: 35px;
+		padding-block: 7px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 12px;
+			width: 5px;
+			height: 86px;
+			border-radius: 10px;
+			background-color: #039154;
+		}
+	}
+
+	.rieltor-title {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		.rieltor-name {
+			font-size: 22px;
+			font-weight: $fw-medium;
+		}
+
+		.rieltor-subtitle {
+			font-size: $size-16;
+			font-weight: $fw-medium;
+			color: #039154;
+		}
+	}
+
+	.rieltor-block-subtitle {
+		font-size: 14px;
+		font-weight: $fw-medium;
+		line-height: 1.2;
+	}
+}
