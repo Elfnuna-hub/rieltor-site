@@ -1,0 +1,183 @@
+@use '../../styles/variables' as *;
+
+.property-card {
+	max-width: 450px;
+	height: 430px;
+	border: 2px solid rgba(200, 200, 200, 0.5);
+	border-radius: 10px;
+	margin: 20px 50px;
+	padding: 12px 10px;
+
+	.property-gallery {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		&-main {
+			position: relative;
+			height: 190px;
+			margin-bottom: 12px;
+			overflow: hidden;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				cursor: pointer;
+			}
+			&::before {
+				content: 'Будинок';
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: $green-linear;
+				width: 100px;
+				height: 32px;
+				border-radius: 10px;
+				font-size: $size-14;
+				font-weight: $fw-regular;
+				color: $white;
+			}
+
+			&--selected {
+				position: absolute;
+				top: 6px;
+				right: 6px;
+				width: 40px;
+				height: 40px;
+				background-color: $white;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+
+				img {
+					width: 30px;
+					height: 28px;
+				}
+			}
+		}
+
+		&-thumbnails {
+			display: flex;
+			align-items: center;
+			gap: 11px;
+		}
+		&-thumbnail {
+			position: relative;
+			width: 98px;
+			height: 60px;
+			border-radius: 10px;
+			overflow: hidden;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			&--overlay {
+				&::after {
+					content: '';
+					position: absolute;
+					inset: 0;
+					background: $light-green-linear;
+				}
+			}
+
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				display: flex;
+				align-items: center;
+				gap: 6px;
+				transform: translate(-50%, -50%);
+				font-size: 20px;
+				font-weight: $fw-medium;
+				color: $white;
+				z-index: 1;
+			}
+		}
+	}
+
+	.property-info {
+		width: 100%;
+		margin-top: 12px;
+	}
+
+	.property-location {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		padding-bottom: 4px;
+
+		span {
+			font-size: $size-16;
+			font-weight: $fw-medium;
+			color: rgba(109, 109, 109, 0.7);
+		}
+	}
+
+	.property-title {
+		font-size: 24px;
+		font-weight: $fw-semibold;
+		color: $main-dark-green;
+		padding-bottom: 12px;
+	}
+
+	.property-features {
+		display: flex;
+		gap: 12px;
+	}
+
+	.property-feature {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		padding-bottom: 12px;
+
+		span {
+			font-size: $size-16;
+			font-weight: $fw-medium;
+			color: rgba(109, 109, 109);
+		}
+	}
+
+	.property-footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&-price {
+			font-size: 32px;
+			font-weight: $fw-bold;
+			color: $main-dark-green;
+		}
+
+		&-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			width: 125px;
+			background-color: $light-green;
+			border: none;
+			border-radius: 10px;
+			font-size: 15px;
+			font-weight: $fw-medium;
+			color: $main-light-green;
+			padding-block: 10px;
+			cursor: pointer;
+
+			img {
+				width: 11px;
+				height: 10px;
+			}
+		}
+	}
+}

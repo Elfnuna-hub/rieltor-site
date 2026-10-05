@@ -1,11 +1,11 @@
 import './Header.scss'
 
-import heart from '@/assets/svg/heart.svg'
-import logo from '@/assets/svg/logo.svg'
-import phone from '@/assets/svg/phone.svg'
-import telegram from '@/assets/svg/telegram.svg'
-import tiktok from '@/assets/svg/tiktok.svg'
-import viber from '@/assets/svg/viber.svg'
+import heart from '@/assets/svg/common/heart.svg'
+import logo from '@/assets/svg/common/logo.svg'
+import phone from '@/assets/svg/common/phone.svg'
+import telegram from '@/assets/svg/contacts/telegram.svg'
+import tiktok from '@/assets/svg/contacts/tiktok.svg'
+import viber from '@/assets/svg/contacts/viber.svg'
 
 function Header() {
 	return (

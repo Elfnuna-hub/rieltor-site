@@ -1,7 +1,7 @@
 import heroRieltor from '@/assets/jpg/heroRieltor.png'
-import calendar from '@/assets/svg/calendar.svg'
-import human from '@/assets/svg/human.svg'
-import prize from '@/assets/svg/prize.svg'
+import calendar from '@/assets/svg/hero/calendar.svg'
+import human from '@/assets/svg/hero/human.svg'
+import prize from '@/assets/svg/hero/prize.svg'
 import GreenButton from '@/components/ui/GreenButton/GreenButton'
 import './Hero.scss'
 

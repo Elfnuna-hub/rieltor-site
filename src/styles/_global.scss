@@ -31,12 +31,13 @@
 }
 
 // Global styles
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
 	font-family: 'Manrope', sans-serif;
 }
 

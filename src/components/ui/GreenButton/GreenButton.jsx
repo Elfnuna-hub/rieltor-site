@@ -1,5 +1,5 @@
 import './GreenButton.scss'
-import rightArrowBtn from "@/assets/svg/rightArrowBtn.svg";
+import rightArrowBtn from "@/assets/svg/common/rightArrowBtn.svg";
 
 function GreenButton({ children }) {
 	return (

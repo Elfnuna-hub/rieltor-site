@@ -1,9 +1,9 @@
 import './Advantages.scss'
 
-import advantagesChoose from '@/assets/svg/advantagesChoose.svg'
-import advantagesHome from '@/assets/svg/advantagesHome.svg'
-import advantagesManager from '@/assets/svg/advantagesManager.svg'
-import advantagesTrust from '@/assets/svg/advantagesTrust.svg'
+import advantagesChoose from '@/assets/svg/advantages/advantagesChoose.svg'
+import advantagesHome from '@/assets/svg/advantages/advantagesHome.svg'
+import advantagesManager from '@/assets/svg/advantages/advantagesManager.svg'
+import advantagesTrust from '@/assets/svg/advantages/advantagesTrust.svg'
 
 function Advantages() {
 	return (

@@ -8,6 +8,12 @@ $green-linear: linear-gradient(
 	#00633c 50%,
 	#039154 100%
 );
+$light-green-linear: linear-gradient(
+	to bottom,
+	rgb(19, 107, 83, 0.65) 0%,
+	rgb(19, 107, 83, 0.72) 50%,
+	rgb(19, 107, 83, 0.82) 100%
+);
 
 $light-green: #e5f4ec;
 
