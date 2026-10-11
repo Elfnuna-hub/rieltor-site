@@ -2,14 +2,14 @@
 
 .advantages {
 	width: 100%;
-	height: 122px;
+	height: 110px;
 	background-color: #e5f4ec;
 	line-height: 1.2;
 
 	&-container {
 		display: flex;
 		align-items: center;
-		padding-block: 21px;
+		padding-block: 16px;
 	}
 
 	&-info {
@@ -61,7 +61,7 @@
 		&-text {
 			display: flex;
 			flex-direction: column;
-			gap: 10px;
+			gap: 4px;
 			max-width: 190px;
 		}
 

@@ -1,0 +1,163 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.popular-properties {
+	margin-top: 30px;
+
+	&-container {
+		display: flex;
+	}
+
+	.real-estate {
+		&-info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&-text {
+				position: relative;
+				padding-left: 42px;
+				h2 {
+					@include text-title;
+					font-size: $size-32;
+					margin-bottom: 8px;
+				}
+
+				span {
+					@include text-subtitle;
+					font-size: $size-15;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(0, -50%);
+					width: 32px;
+					height: 42px;
+					background: url('../../assets/svg/popularProperties/fire.svg')
+						center/contain no-repeat;
+				}
+			}
+		}
+
+		&-cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 12px;
+			margin-top: 16px;
+		}
+	}
+
+	.real-estate-sidebar {
+		margin-left: 12px;
+		min-width: 580px;
+
+		.sell-property {
+			position: relative;
+			background-color: $light-green;
+			border-radius: 10px;
+			border: 2px solid $border-gray;
+			padding-block: 18px;
+			padding-left: 26px;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -6px;
+				right: 0;
+				background: url('../../assets/jpg/sellBlockImage.png');
+				width: 240px;
+				height: 210px;
+			}
+
+			&-text {
+				max-width: 305px;
+				margin-bottom: 15px;
+				h3 {
+					@include text-title;
+					font-size: $size-28;
+					margin-bottom: 8px;
+				}
+				span {
+					@include text-subtitle;
+					font-size: $size-14;
+				}
+			}
+		}
+
+		.map-property {
+			position: relative;
+			margin-top: 12px;
+			border-radius: 10px;
+			overflow: hidden;
+
+			&::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				border: 2px solid $border-gray;
+				border-radius: inherit;
+				pointer-events: none;
+			}
+
+			&-bordered {
+				img {
+					display: block;
+					width: 581px;
+					height: 725px;
+					object-fit: cover;
+					transform: scale(1.02);
+				}
+			}
+
+			&-text {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 12px;
+				text-align: center;
+				min-width: 320px;
+
+				img {
+					width: 55px;
+					height: 58px;
+				}
+
+				h4 {
+					@include text-title;
+					font-size: $size-28;
+				}
+
+				span {
+					@include text-subtitle;
+					font-size: $size-16;
+				}
+
+				&-button {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					text-decoration: none;
+					background-color: $light-green;
+					border: 1px solid $main-dark-green;
+					border-radius: $border-radius;
+					padding: 16px 28px;
+
+					span {
+						font-size: $size-16;
+						font-weight: $fw-regular;
+					}
+
+					svg {
+						color: #00633c;
+					}
+				}
+			}
+		}
+	}
+}

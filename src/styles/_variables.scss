@@ -2,6 +2,8 @@ $white: #ffffff;
 
 $main-dark-green: #015232;
 $main-light-green: #00633c;
+$light-green: #e5f4ec;
+
 $green-linear: linear-gradient(
 	to bottom,
 	#015232 0%,
@@ -15,7 +17,6 @@ $light-green-linear: linear-gradient(
 	rgb(19, 107, 83, 0.82) 100%
 );
 
-$light-green: #e5f4ec;
 
 $dark-gray: #6d6d6d;
 $light-gray: rgb(109, 109, 109, 0.7);
@@ -26,8 +27,11 @@ $margin-inline: auto;
 $border-radius: 15px;
 
 $size-14: 14px;
+$size-15: 15px;
 $size-16: 16px;
+$size-28: 28px;
 $size-30: 30px;
+$size-32: 32px;
 
 
 $fw-bold: 700;

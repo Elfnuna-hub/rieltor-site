@@ -1,7 +1,7 @@
 import Header from '@/components/Header/Header'
 import Hero from '@/components/Hero/Hero'
 import Advantages from '@/components/Advantages/Advantages'
-import PropertyCard from '@/components/PropertyCard/PropertyCard'
+import PopularProperties from '@/components/PopularProperties/PopularProperties'
 
 function Home() {
 	return (
@@ -9,7 +9,7 @@ function Home() {
 			<Header />
 			<Hero />
 			<Advantages />
-			<PropertyCard />
+			<PopularProperties />
 		</>
 	)
 }

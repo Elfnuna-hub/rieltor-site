@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+@mixin text-title {
+	color: $main-dark-green;
+	font-weight: $fw-bold;
+}
+
+@mixin text-subtitle {
+	color: $main-light-green;
+	font-weight: $fw-medium;
+}
