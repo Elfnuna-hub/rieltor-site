@@ -1,0 +1,92 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.feedback-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 475px;
+	height: 250px;
+	background-color: $white;
+	border-radius: 10px;
+	padding: 25px 40px;
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.1);
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 150px;
+		height: 100px;
+		background: url('../../../assets/svg/feedback/commentsCardSvg.png') center /
+			contain no-repeat;
+		opacity: 0.6;
+	}
+
+	&-quotes {
+		width: 30px;
+		aspect-ratio: 1;
+	}
+
+	&-info {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		.person-svg {
+			width: 58px;
+			aspect-ratio: 1;
+			border: 2px solid $main-dark-green;
+			border-radius: 50%;
+			opacity: 0.8;
+		}
+
+		.person-details {
+			display: flex;
+			flex-direction: column;
+
+			.name {
+				@include text-title;
+				font-size: 18px;
+			}
+
+			.city {
+				color: $dark-gray;
+				font-size: $size-15;
+				font-weight: $fw-medium;
+				margin-top: 6px;
+			}
+		}
+	}
+
+	&-main {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+		margin-top: 10px;
+
+		&-svg {
+			width: 30px;
+			aspect-ratio: 1;
+			opacity: 0.9;
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+
+			.text {
+				@include text-subtitle;
+				font-size: $size-16;
+				line-height: 1.3;
+			}
+
+			.date {
+				font-size: $size-14;
+				color: $dark-gray;
+				margin-top: 10px;
+			}
+		}
+	}
+}
