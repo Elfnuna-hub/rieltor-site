@@ -1,13 +1,22 @@
+import rightArrowBtn from '@/assets/svg/common/rightArrowBtn.svg'
 import './GreenButton.scss'
-import rightArrowBtn from "@/assets/svg/common/rightArrowBtn.svg";
 
-function GreenButton({ children }) {
+function GreenButton({
+	children,
+	icon = rightArrowBtn,
+	reverse = false,
+	href = '/',
+	className = '',
+}) {
 	return (
-		<a href="/" className='green-button'>
+		<a
+			href={href}
+			className={`green-button ${reverse ? 'green-button--reverse' : ''} ${className}`}
+		>
 			<span>{children}</span>
 			<img
-				src={rightArrowBtn}
-				alt=">"
+				src={icon}
+				alt=''
 			/>
 		</a>
 	)

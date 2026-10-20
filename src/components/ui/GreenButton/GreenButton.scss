@@ -14,4 +14,8 @@
 		font-size: $size-16;
 		font-weight: $fw-medium;
 	}
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
 }

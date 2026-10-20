@@ -3,6 +3,7 @@ import Hero from '@/components/Hero/Hero'
 import Advantages from '@/components/Advantages/Advantages'
 import PopularProperties from '@/components/PopularProperties/PopularProperties'
 import Feedback from '@/components/Feedback/Feedback'
+import Consultation from '@/components/Consultation/Consultation'
 
 function Home() {
 	return (
@@ -12,6 +13,7 @@ function Home() {
 			<Advantages />
 			<PopularProperties />
 			<Feedback />
+			<Consultation />
 		</>
 	)
 }
